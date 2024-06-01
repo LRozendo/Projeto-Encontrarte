@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dekko&family=Playpen+Sans:wght@100..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --ColorLighter: #F2E2C4;
+    --ColorNormal: #F2BB77;
+    --ColorBold: #F2A477;
+    --ColorBolder: #BF7F5A;
+    --ColorEmphasisContrast: #730C02;
+    --ColorBasicContrast: #430600;
+
+    --GradientColorLighter: #F8E4C0;
+    --GradientColorNormal: #F4CA9B;
+    --GradientColorBold: #f5a157;
+
+    --NormalFamily: Inter, Arial, sans-serif;
+    --EmphasisFamily: 'Great Vibes', cursive, sans-serif;
+}
+
+
+html {
+    height: 100%;
+
+    font-family: var(--NormalFamily);
+}
+
+body {
+    background-image: linear-gradient(to bottom, var(--GradientColorLighter), var(--GradientColorNormal), var(--GradientColorBold));
+}

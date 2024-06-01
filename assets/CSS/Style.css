@@ -1,0 +1,117 @@
+:root {
+    --ColorLighter: #F2E2C4;
+    --ColorNormal: #F2BB77;
+    --ColorBold: #F2A477;
+    --ColorBolder: #926346;
+    --ColorEmphasisContrast: #730C02;
+    --ColorBasicContrast: #430600;
+
+    --GradientColorLighter: #F8E4C0;
+    --GradientColorNormal: #F4CA9B;
+    --GradientColorBold: #f5a157;
+
+    --NormalFamily: Inter, Arial, sans-serif;
+    --EmphasisFamily: "Playpen Sans", cursive, sans-serif;
+}
+
+header {
+    height: 100px; 
+
+    text-align: center; 
+
+    color: var(--ColorEmphasisContrast);
+    background-image: linear-gradient(to bottom, var(--GradientColorLighter), var(--GradientColorNormal));
+
+    padding-top: 15px;
+
+}
+
+header h1 {
+    font-family: var(--EmphasisFamily);
+    font-size: 3em;
+
+    font-weight: 600;
+}
+
+nav {
+    color: var(--ColorEmphasisContrast);
+    background-color: var(--GradientColorNormal);
+
+    text-align: center;
+
+
+    padding-bottom: 10px;
+
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px ;
+
+    box-shadow: -3px 6px 6px 0px rgba(215, 162, 105, 0.2);
+}
+
+nav a {
+    text-decoration: underline;
+
+    font-weight: 700;
+
+    color: #d99a72;
+}
+
+main {
+    background-image: linear-gradient(to right, var(--GradientColorNormal), var(--GradientColorNormal), var(--GradientColorBold));
+
+    margin: auto;
+
+    margin-top: 20px;
+    margin-bottom: 15px;
+
+    min-height: 300px;
+    max-width: 1000px;
+
+    box-shadow: 0px 0px 3px 3px rgba(230, 150, 79, 0.2);
+    
+    border-radius: 5px;
+}
+
+article {
+    padding: 10px;
+}
+
+main h1 {
+    text-indent: 5px;
+
+    line-height: 1.3em;
+
+    color: var(--ColorEmphasisContrast);
+}
+
+main p {
+    text-align: justify;
+    text-indent: 10px;
+
+
+    line-height: 1.3em;
+
+    
+    
+    padding-left: 8px;
+
+    color: var(--ColorBasicContrast);
+}
+
+footer {
+    text-align: right;
+
+    font-size: 0.7em;
+
+    margin: 10px;
+
+    color: var(--ColorBasicContrast);
+}
+
+footer a {
+    text-decoration: underline;
+
+    font-weight: 600;
+
+    color: var(--ColorBolder);
+}
