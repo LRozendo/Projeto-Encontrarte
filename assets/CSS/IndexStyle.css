@@ -1,0 +1,124 @@
+:root {
+    --ColorLighter: #F2E2C4;
+    --ColorNormal: #F2BB77;
+    --ColorBold: #F2A477;
+    --ColorBolder: #926346;
+
+    --ColorEmphasisContrast: #fce1af;
+    --ColorBasicContrast: #fffcf6;
+
+    --GradientColorLighterBlured: rgba(248, 228, 192, 0.15);
+    --GradientColorNormalBlured: rgba(244, 202, 155, 0.25);
+    --GradientColorBoldBlured: rgba(245, 161, 87, 0.15);
+
+    --GradientColorLighter: #F8E4C0;
+    --GradientColorNormal: #F4CA9B;
+    --GradientColorBold: #f5a157;
+
+    --NormalFamily: Inter, Arial, sans-serif;
+    --EmphasisFamily: "Playpen Sans", cursive, sans-serif;
+}
+
+body {
+    background-image: url(../images/Background.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center top;
+}
+
+header {
+    height: 100px;
+    background-image: url(../images/IconeG.png);
+    background-size: 90px;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: var(--ColorEmphasisContrast);
+    background-color: transparent;
+    padding-top: 15px;
+    background-position: center center;
+}
+
+header h1 {
+    font-family: var(--EmphasisFamily);
+    font-size: 3em;
+    font-weight: 600;
+
+    text-shadow: -2px -1px 6px #5609027a;
+}
+
+nav {
+    color: var(--ColorBold);
+    background-color: transparent;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: rgba(215, 162, 105, 0.2) -3px 6px 6px 0px;
+}
+
+nav a {
+    color: var(--ColorBasicContrast);
+    text-decoration: underline;
+}
+
+main {
+    background-image: linear-gradient(to right, var(--GradientColorLighterBlured), var(--GradientColorNormalBlured), var(--GradientColorBoldBlured));
+    backdrop-filter: blur(0.35px);
+
+    min-height: 300px;
+    max-width: 1200px;
+
+    box-shadow: rgba(12, 8, 6, 0.3) -2px -3px 15px 1px;
+    margin: 20px auto 15px;
+
+    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.244);
+}
+
+article {
+    padding: 10px;
+}
+
+article > h1 {
+    text-indent: 5px;
+    line-height: 1.3em;
+    color: var(--ColorEmphasisContrast);
+}
+
+article > p {
+    text-align: justify;
+    text-indent: 10px;
+    text-shadow: rgba(0, 0, 0, 0.7) 1px 1px;
+
+    line-height: 1.3em;
+    
+    padding-left: 8px;
+
+    color: var(--ColorBasicContrast);
+}
+
+footer {
+    backdrop-filter: blur(0.5px);
+
+    text-align: right;
+
+    font-size: 0.7em;
+
+    color: var(--ColorBasicContrast);
+}
+
+#FObackground {
+    background-image: linear-gradient(to right, var(--GradientColorLighterBlured), var(--GradientColorNormalBlured), var(--GradientColorBoldBlured));
+    backdrop-filter: blur(0.5px);
+    padding: 5px;
+    border: 3px solid var(--GradientColorBoldBlured);
+    border-radius: 10px;
+}
+
+footer a {
+    text-decoration: underline;
+
+    font-weight: 700;
+    
+    color: var(--ColorEmphasisContrast);
+}

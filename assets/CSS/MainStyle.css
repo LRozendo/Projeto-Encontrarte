@@ -21,6 +21,10 @@
     --GradientColorNormal: #F4CA9B;
     --GradientColorBold: #f5a157;
 
+    --GradientColorLighterBlured: rgba(248, 228, 192, 0.15);
+    --GradientColorNormalBlured: rgba(244, 202, 155, 0.25);
+    --GradientColorBoldBlured: rgba(245, 161, 87, 0.15);
+
     --NormalFamily: Inter, Arial, sans-serif;
     --EmphasisFamily: 'Great Vibes', cursive, sans-serif;
 }

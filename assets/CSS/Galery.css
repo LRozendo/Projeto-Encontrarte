@@ -2,24 +2,24 @@
     --ColorLighter: #F2E2C4;
     --ColorNormal: #F2BB77;
     --ColorBold: #F2A477;
-    --ColorBolder: #926346;
-    --ColorEmphasisContrast: #fce1af;
-    --ColorBasicContrast: #fffcf6;
-    --GradientColorLighterBlured: rgba(248, 228, 192, 0.15);
-    --GradientColorNormalBlured: rgba(244, 202, 155, 0.25);
-    --GradientColorBoldBlured: rgba(245, 161, 87, 0.15);
+    --ColorBolder: #BF7F5A;
+    --ColorEmphasisContrast: #730C02;
+    --ColorBasicContrast: #430600;
+
     --GradientColorLighter: #F8E4C0;
     --GradientColorNormal: #F4CA9B;
     --GradientColorBold: #f5a157;
+
+    --GradientColorLighterBlured: rgba(248, 228, 192, 0.15);
+    --GradientColorNormalBlured: rgba(244, 202, 155, 0.25);
+    --GradientColorBoldBlured: rgba(245, 161, 87, 0.15);
+
     --NormalFamily: Inter, Arial, sans-serif;
-    --EmphasisFamily: "Playpen Sans", cursive, sans-serif;
+    --EmphasisFamily: 'Great Vibes', cursive, sans-serif;
 }
 
 body {
-    background-image: url(../images/Background.webp);
-    background-size: cover;
     background-attachment: fixed;
-    background-position: center top;
 }
 
 header {
@@ -34,14 +34,6 @@ header {
     background-position: center center;
 }
 
-header h1 {
-    font-family: var(--EmphasisFamily);
-    font-size: 3em;
-    font-weight: 600;
-
-    text-shadow: -2px -1px 6px #5609027a;
-}
-
 nav {
     color: var(--ColorBold);
     background-color: transparent;
@@ -53,7 +45,7 @@ nav {
 }
 
 nav a {
-    font-weight: 700;
+    font-weight: normal;
     color: var(--ColorBasicContrast);
     text-decoration: underline;
 }
@@ -61,15 +53,21 @@ nav a {
 main {
     background-image: linear-gradient(to right, var(--GradientColorLighterBlured), var(--GradientColorNormalBlured), var(--GradientColorBoldBlured));
     backdrop-filter: blur(0.35px);
+
     min-height: 300px;
     max-width: 1200px;
-    box-shadow: rgba(12, 8, 6, 0.3) -2px -3px 15px 1px;
+
+    box-shadow: rgba(140, 92, 50, 0.296) -2px 0px 8px 0px;
     margin: 20px auto 15px;
+
     border-radius: 5px;
 }
 
 article {
-    padding: 10px;
+    padding: 10px 0 30px 0;
+
+    border-radius: 5px;
+    box-shadow: 1px 5px 7px rgba(183, 142, 91, 0.25);
 }
 
 article > h1 {
@@ -81,16 +79,53 @@ article > h1 {
 article > p {
     text-align: justify;
     text-indent: 10px;
-    text-shadow: rgba(0, 0, 0, 0.7) 1px 1px;
+
+    font-size: 2.4vh;
+
     line-height: 1.3em;
+
     padding-left: 8px;
+    padding-right: 8px;
+
     color: var(--ColorBasicContrast);
+}
+
+main section {
+    height: 500px;
+    max-width: 1200px;
+
+    margin: auto;
+
+    background-image: linear-gradient(to bottom, var(--GradientColorLighter), var(--GradientColorNormal), var(--GradientColorBold));
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.411);
+
+    border: 2px solid var(--ColorLighter);
+    border-radius: 5px;
+
+    margin: 5px;
+}
+
+#Imagem1 {
+    background-image: url(../images/Imagem1.jpg);
+}
+
+#Imagem2 {
+    background-image: url(../images/Imagem2.webp);
+    background-position: center top;
 }
 
 footer {
     backdrop-filter: blur(0.5px);
+
     text-align: right;
+
     font-size: 0.7em;
+
     color: var(--ColorBasicContrast);
 }
 
@@ -98,7 +133,7 @@ footer {
     background-image: linear-gradient(to right, var(--GradientColorLighterBlured), var(--GradientColorNormalBlured), var(--GradientColorBoldBlured));
     backdrop-filter: blur(0.5px);
     padding: 5px;
-    border: 2px solid var(--GradientColorBoldBlured);
+    border: 3px solid var(--GradientColorNormalBlured);
     border-radius: 10px;
 }
 
