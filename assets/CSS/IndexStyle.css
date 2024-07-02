@@ -24,7 +24,7 @@
 }
 
 body {
-    background-image: url(../images/Background.webp);
+    background-image: url(../images/BackgroundDiminuido.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center top;
@@ -52,6 +52,7 @@ nav {
     box-shadow: rgba(215, 162, 105, 0.2) -3px 6px 6px 0px;
     font-family: "Anton SC";
     text-shadow: 1px -1px 0px rgba(0, 0, 0, 0.36);
+    font-size: 1em;
 }
 
 nav a {

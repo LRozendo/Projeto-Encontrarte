@@ -48,6 +48,7 @@ nav {
     box-shadow: rgba(215, 162, 105, 0.2) -3px 6px 6px 0px;
     font-family: "Anton SC";
     text-shadow: 1px -1px 0px rgba(0, 0, 0, 0.36);
+    font-size: 1em;
 }
 
 nav a {
@@ -117,11 +118,11 @@ main section {
 }
 
 #Imagem1 {
-    background-image: url(../images/Imagem1.jpg);
+    background-image: url(../images/Imagem1Diminuida.jpg);
 }
 
 #Imagem2 {
-    background-image: url(../images/Imagem2.webp);
+    background-image: url(../images/Imagem2Dimuida.jpg);
     background-position: center top;
 }
 
