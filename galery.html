@@ -23,10 +23,43 @@
         <br>
         <!-- Imagens e suas descrições -->
 
-        <section id="Imagem1"></section>
-        <section id="Imagem2"></section>
+        <section id="Imagem1" loading="lazy"></section>
+        <section id="Imagem2" loading="lazy"></section>
 
         <br>
     </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let lazyloadImages = document.querySelectorAll("section[loading='lazy']");
+            let lazyloadThrottleTimeout;
+    
+            function lazyload () {
+                if(lazyloadThrottleTimeout) {
+                    clearTimeout(lazyloadThrottleTimeout);
+                }    
+    
+                lazyloadThrottleTimeout = setTimeout(function() {
+                    let scrollTop = window.pageYOffset;
+                    lazyloadImages.forEach(function(img) {
+                        if(img.offsetTop < (window.innerHeight + scrollTop)) {
+                            img.style.backgroundImage = img.getAttribute('data-bg');
+                            img.style.backgroundAttachment = 'fixed'; // Garante o efeito parallax
+                            img.removeAttribute('loading');
+                        }
+                    });
+                    if(lazyloadImages.length == 0) { 
+                        document.removeEventListener("scroll", lazyload);
+                        window.removeEventListener("resize", lazyload);
+                        window.removeEventListener("orientationChange", lazyload);
+                    }
+                }, 20);
+            }
+    
+            document.addEventListener("scroll", lazyload);
+            window.addEventListener("resize", lazyload);
+            window.addEventListener("orientationChange", lazyload);
+        });
+    </script>  
 </body>
 </html>
