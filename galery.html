@@ -14,7 +14,7 @@
         <span style="font-size: 1.3em;">Galeria</span>
     </nav>
 
-    <main>
+    <main style="margin-top: 15px;">
         <article>
             <h1>Bem-vindo a galeria</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore labore illo illum iure sed. Non ab quibusdam nostrum molestiae distinctio, dicta unde aliquam voluptatum aspernatur nulla facilis natus explicabo quo. <!-- Na teoria, aqui descreveria pra que serve e qual a principal função desta página. --></p>
@@ -29,37 +29,6 @@
         <br>
     </main>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            let lazyloadImages = document.querySelectorAll("section[loading='lazy']");
-            let lazyloadThrottleTimeout;
     
-            function lazyload () {
-                if(lazyloadThrottleTimeout) {
-                    clearTimeout(lazyloadThrottleTimeout);
-                }    
-    
-                lazyloadThrottleTimeout = setTimeout(function() {
-                    let scrollTop = window.pageYOffset;
-                    lazyloadImages.forEach(function(img) {
-                        if(img.offsetTop < (window.innerHeight + scrollTop)) {
-                            img.style.backgroundImage = img.getAttribute('data-bg');
-                            img.style.backgroundAttachment = 'fixed'; // Garante o efeito parallax
-                            img.removeAttribute('loading');
-                        }
-                    });
-                    if(lazyloadImages.length == 0) { 
-                        document.removeEventListener("scroll", lazyload);
-                        window.removeEventListener("resize", lazyload);
-                        window.removeEventListener("orientationChange", lazyload);
-                    }
-                }, 20);
-            }
-    
-            document.addEventListener("scroll", lazyload);
-            window.addEventListener("resize", lazyload);
-            window.addEventListener("orientationChange", lazyload);
-        });
-    </script>  
 </body>
 </html>

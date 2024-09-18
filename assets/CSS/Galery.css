@@ -29,6 +29,7 @@ html, body {
 
 body {
     background-attachment: fixed;
+    overflow-x: hidden;
 }
 
 nav {
@@ -38,7 +39,7 @@ nav {
 
     text-align: center;
 
-    margin-top: 10px;
+    padding-top: 10px;
     padding-bottom: 10px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
@@ -53,18 +54,29 @@ nav a {
     font-weight: normal;
     color: var(--ColorBasicContrast);
     text-decoration: underline;
+
+    transition: 0.2s;
+}
+
+nav a:hover, nav a:active {
+    background-color: var(--GradientColorNormal);
+
+    padding: 5px;
+    border-radius: 5px;
+
+    transition: 0.2s;
 }
 
 main {
     background-image: linear-gradient(to right, var(--GradientColorLighterBlured), var(--GradientColorNormalBlured), var(--GradientColorBoldBlured));
     background-attachment: scroll;
 
-    width: 100vw;
+    width: 90vw;
 
     padding-top: 5px;
     margin: auto;
-    margin-top: 15px;
-    margin-bottom: 15px;
+
+    
 
     box-shadow: rgba(140, 92, 50, 0.296) -2px 0px 8px 0px;
     
@@ -73,6 +85,8 @@ main {
 }
 
 article {
+    width: 96%;
+
     margin: 10px;
     padding: 10px;
 
@@ -104,16 +118,16 @@ article > p {
 }
 
 #Imagem1 {
-    background-image: url(../images/Imagem1Diminuida.jpg);
+    background-image: url(../images/Sla.jfif);
 }
 
 #Imagem2 {
-    background-image: url(../images/Imagem2Dimuida.jpg);
+    background-image: url(../images/Sla2.jfif);
 }
 
 main section {
-    height: 500px;
-    width: 90%;
+    height: 300px;
+    width: 500px;
 
     margin: auto;
     margin-bottom: 10px;
