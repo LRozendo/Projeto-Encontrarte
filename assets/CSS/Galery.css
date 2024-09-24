@@ -117,6 +117,61 @@ article > p {
     transition: all .5s;
 }
 
+#btns{
+    text-align: center;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2.4vh;
+    font-weight: 500;
+
+    line-height: 1.3em;
+
+    padding-left: 8px;
+    padding-right: 8px;
+
+    color: #894c29;
+
+    transition: all .5s;
+
+    text-shadow: #f5a15786 2px 1px 1px;
+}
+
+#btns span {
+    cursor: grab;
+    margin: 30px;
+    
+    font-size: 3.2vh;
+}
+
+.poe {
+    display: none;
+}
+
+.poe p{
+    text-indent: 0px;
+    text-align: justify;
+    
+
+    font-size: 2.4vh;
+
+    line-height: 1.3em;
+
+    padding-left: 8px;
+    padding-right: 8px;
+
+    color: var(--ColorBasicContrast);
+
+    transition: all .5s;
+}
+
+.poe h1{
+    line-height: 1.3em;
+    color: var(--ColorEmphasisContrast);
+
+    text-indent: 0px;
+}
+
+
 #Imagem1 {
     background-image: url(../images/Sla.jfif);
 }
@@ -126,6 +181,7 @@ article > p {
 }
 
 main section {
+
     height: 300px;
     width: 90%;
 
@@ -142,4 +198,6 @@ main section {
 
     border: 2px solid var(--ColorLighter);
     border-radius: 5px;
+
+    display: none;
 }

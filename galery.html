@@ -21,14 +21,151 @@
         </article>
         
         <br>
+
+        <article id="btns">
+            <span onclick="PIfunc()">Pinturas</span> <span onclick="Pfunc()">Poemas</span>
+        </article>
+
         <!-- Imagens e suas descrições -->
 
-        <section id="Imagem1" loading="lazy"></section>
-        <section id="Imagem2" loading="lazy"></section>
+        <section id="Imagem1"></section>
+        <section id="Imagem2"></section>
 
+        
+        <article class="poe" id="poe"><h1 style="font-size: 5vh; color: #004C7A; font-family: Garamond;">Heróis Nacionais</h1>
+            <legend style="color: #004C7A; font-family: Garamond;">por Marilson Willis Pessoa Silva</legend>
+            <br>
+            <p>Terra inigualável, <br>
+                Por seu povo cultivada <br>
+                Nação guarda por cultura sua, <br>
+                Grandes heróis Nacionais. <br>
+                Meu Brasil, bom Brasil, <br>
+                Fazes várias passastes, <br>
+                Mas no início de tudo <br>
+                Esses heróis lá estavam. <br>
+                A partir da invasora chegada, <br>
+                Cultura sua força perde <br>
+                Por conta de maior poder <br>
+                Desses estrangeiros invasores. <br>
+                Passado-se o tempo, <br>
+                Cultura heróica prevalece, <br>
+                Mesmo com forças perdidas <br>
+                Continua em nosso meio. <br>
+                Herói Nacional, <br>
+                Volta-te com essa milenar cultura, <br>
+                Na nação originalmente sua, <br>
+                Pois de ti precisamos. <br>
+                </p>
+            </article>
+            
+        
+        <article class="poe" id="poe1">
+            <h1 style="font-size: 5vh; color: #C00000; font-family: Garamond;">Cordão de Nós</h1>
+            <legend style="color: #C00000; font-family: Garamond;">por João Pedro de Albuquerque Santiago</legend>
+            <br>
+            <p>De tempos em tempos, ao árduo relento. <br>
+                Salvador nosso, livrai do tormento! <br>
+                Donos, eles, herdeiros somos nós!<br>
+                Filhos, sem pai, órfãos somos, sem voz.<br>
+                Terra de nós, hoje nossa, invadida, <br>
+                Desatada era sem nós, O cordão.<br>
+                Laçada, levada em viagem só de ida.<br>
+                Indo, lá está, se esfarelarão.<br>
+                E tu, a sós, ficas só a resmungar:<br>
+                Não sabe onde está, de onde, enfim, é vindo.<br>
+                E vários não sabem, mesmo e estão indo:<br>
+                Estando em nós, de nós algo a esperar.<br>
+                Sua arte milenar, a esfarelar, <br>
+                Mas por dentro a sobreviver, mesma arte. <br>
+                Que a gente, de nós, deslace a esperar <br>
+                Deles vida que se, agora, rebate.         <br>        
+                </p>
+        </article>
+
+        <article class="poe" id="poe2"><h1 style="font-size: 5vh; color: #536142; font-family: Garamond;">Cantos de Resistência</h1>
+            <legend style="color: #536142; font-family: Garamond;">por Lucas Rozendo dos Santos</legend>
+            <br>
+            <p>Nas matas verdes de um passado eterno, <br>
+                Reside o canto do povo a lutar. <br>
+                Indígena forte, em seu peito terno, <br>
+                Carrega a história de um viver sem par. <br>
+                <br>
+                O rio murmura segredos antigos,<br>
+                Enquanto a lua os sonhos faz crescer.<br>
+                Entre canções e passos amigos,<br>
+                A aldeia inteira ensina a viver.<br>
+                <br>
+                Mas há um mundo que tenta invadir,<br>
+                Promessas vazias e sombras a cercar,<br>
+                Porém, resistem com força e a sorrir.<br>
+                <br>
+                No coração, o desejo de lutar,<br>
+                E em cada gesto, um firme existir,<br>
+                Indígena livre, a terra a guardar.<br>
+                    
+                </p></article>
+
+                <article class="poe" id="poe3"><h1 style="font-size: 5vh; color: #935409; font-family: Garamond;">Terra indígena</h1>
+                    <legend style="color: #935409; font-family: Garamond;">por Raylander Kellyson Silva</legend>
+                    <br>
+                    <p>De tempos em tempos,<br>
+                        Salvador nosso temos <br>
+                        Verdadeiros donos dessa terra,<br>
+                        Que invadida por eles foi.<br>
+                        Nossa terra indígena,<br>
+                        Desde o começo estavam aqui<br>
+                        Tiveram a cultura invadida<br>
+                        Por tais europeus.<br>
+                        Nos dias atuais,<br>
+                        Esquecidos estão sendo<br>
+                        E vários não sabem,<br>
+                        Quem realmente é descobriu isso aqui.<br>
+                        Sua cultura milenar,<br>
+                        Conseguiu viver por tanto tempo, <br>
+                        Mas por essa influência europeia,<br>
+                        Em extinção estão entrando.         <br>               
+                        </p></article>
         <br>
     </main>
 
-    
+    <script>
+        let ImgSec = document.querySelector('#Imagem1')
+        let ImgSec1 = document.querySelector('#Imagem2')
+
+        let Poe = document.getElementById('poe')
+        let Poe1 = document.getElementById('poe1')
+        let Poe2 = document.getElementById('poe2')
+        let Poe3 = document.getElementById('poe3')
+
+        function PIfunc() {
+            if (Poe.display == 'none') {
+                ImgSec.style.display = "block";
+                ImgSec1.style.display = "block";
+            } else {
+                ImgSec.style.display = "block";
+                ImgSec1.style.display = "block";
+                Poe.style.display = 'none'
+                Poe1.style.display = 'none'
+                Poe2.style.display = 'none'
+                Poe3.style.display = 'none'
+            }
+        }
+
+        function Pfunc() {
+            if (ImgSec.display == 'none') {
+                Poe.style.display = 'block'
+                Poe1.style.display = 'block'
+                Poe2.style.display = 'block'
+                Poe3.style.display = 'block'
+            } else {
+                Poe.style.display = 'block'
+                Poe1.style.display = 'block'
+                Poe2.style.display = 'block'
+                Poe3.style.display = 'block'
+                ImgSec.style.display = "none";
+                ImgSec1.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
