@@ -150,46 +150,36 @@
         let Poe3 = document.getElementById('poe3')
 
         function PIfunc() {
-            if (Poe.display == 'none') {
-                ImgSec.style.display = "block";
-                ImgSec1.style.display = "block";
-                ImgSec2.style.display = "block";
-                ImgSec3.style.display = "block";
-                ImgSec4.style.display = "block";
-                ImgSec5.style.display = "block";
-            } else {
-                ImgSec.style.display = "block";
-                ImgSec1.style.display = "block";
-                ImgSec2.style.display = "block";
-                ImgSec3.style.display = "block";
-                ImgSec4.style.display = "block";
-                ImgSec5.style.display = "block";
-                Poe.style.display = 'none'
-                Poe1.style.display = 'none'
-                Poe2.style.display = 'none'
-                Poe3.style.display = 'none'
-            }
-        }
 
-        function Pfunc() {
-            if (ImgSec.display == 'none') {
-                Poe.style.display = 'block'
-                Poe1.style.display = 'block'
-                Poe2.style.display = 'block'
-                Poe3.style.display = 'block'
-            } else {
-                Poe.style.display = 'block'
-                Poe1.style.display = 'block'
-                Poe2.style.display = 'block'
-                Poe3.style.display = 'block'
-                ImgSec.style.display = "none";
-                ImgSec1.style.display = "none";
-                ImgSec2.style.display = "none";
-                ImgSec3.style.display = "none";
-                ImgSec4.style.display = "none";
-                ImgSec5.style.display = "none";
-            }
-        }
+    // Exibe pinturas e esconde poemas
+    ImgSec.classList.add('show');
+    ImgSec1.classList.add('show');
+    ImgSec2.classList.add('show');
+    ImgSec3.classList.add('show');
+    ImgSec4.classList.add('show');
+    ImgSec5.classList.add('show');
+
+    Poe.classList.remove('show');
+    Poe1.classList.remove('show');
+    Poe2.classList.remove('show');
+    Poe3.classList.remove('show');
+}
+
+function Pfunc() {
+    // Exibe poemas e esconde pinturas
+    Poe.classList.add('show');
+    Poe1.classList.add('show');
+    Poe2.classList.add('show');
+    Poe3.classList.add('show');
+
+    ImgSec.classList.remove('show');
+    ImgSec1.classList.remove('show');
+    ImgSec2.classList.remove('show');
+    ImgSec3.classList.remove('show');
+    ImgSec4.classList.remove('show');
+    ImgSec5.classList.remove('show');
+
+}
     </script>
 </body>
 </html>
