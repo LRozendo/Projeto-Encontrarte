@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="LRozendo">
     <title>Galeria-Encontrarte</title>
 
     <link rel="stylesheet" href="assets/CSS/MainStyle.css">
@@ -10,14 +11,16 @@
 </head>
 <body>
     <nav>
-        <a href="index.html" style="margin-right: 20px; font-size: 1.3em;">Inicio</a>
-        <span style="font-size: 1.3em;">Galeria</span>
+        <a href="index.html" style="margin-right: 20px; font-size: 1.7em;">Inicio</a>
+        <span style="font-size: 1.7em;">Galeria</span>
     </nav>
 
     <main style="margin-top: 15px;">
         <article>
-            <h1>Bem-vindo a galeria</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore labore illo illum iure sed. Non ab quibusdam nostrum molestiae distinctio, dicta unde aliquam voluptatum aspernatur nulla facilis natus explicabo quo. <!-- Na teoria, aqui descreveria pra que serve e qual a principal função desta página. --></p>
+            <h1 style="font-size: 3.7vh;">Bem-vindo a galeria!</h1>
+            <br>
+            <p>Está página tem o intuito de mostrar nossas obras artísticas e literárias.</p> 
+            <p>Toque em uma das opções para poder visualizar:</p> <!-- Na teoria, aqui descreveria pra que serve e qual a principal função desta página. -->
         </article>
         
         <br>
@@ -30,12 +33,17 @@
 
         <section id="Imagem1"></section>
         <section id="Imagem2"></section>
+        <section id="Imagem3"></section>
+        <section id="Imagem4"></section>
+        <section id="Imagem5"></section>
+        <section id="Imagem6"></section>
+        
 
         
         <article class="poe" id="poe"><h1 style="font-size: 5vh; color: #004C7A; font-family: Garamond;">Heróis Nacionais</h1>
             <legend style="color: #004C7A; font-family: Garamond;">por Marilson Willis Pessoa Silva</legend>
             <br>
-            <p>Terra inigualável, <br>
+            <p style="font-size: .9em;">Terra inigualável, <br>
                 Por seu povo cultivada <br>
                 Nação guarda por cultura sua, <br>
                 Grandes heróis Nacionais. <br>
@@ -63,7 +71,7 @@
             <h1 style="font-size: 5vh; color: #C00000; font-family: Garamond;">Cordão de Nós</h1>
             <legend style="color: #C00000; font-family: Garamond;">por João Pedro de Albuquerque Santiago</legend>
             <br>
-            <p>De tempos em tempos, ao árduo relento. <br>
+            <p style="font-size: .9em;">De tempos em tempos, ao árduo relento. <br>
                 Salvador nosso, livrai do tormento! <br>
                 Donos, eles, herdeiros somos nós!<br>
                 Filhos, sem pai, órfãos somos, sem voz.<br>
@@ -85,7 +93,7 @@
         <article class="poe" id="poe2"><h1 style="font-size: 5vh; color: #536142; font-family: Garamond;">Cantos de Resistência</h1>
             <legend style="color: #536142; font-family: Garamond;">por Lucas Rozendo dos Santos</legend>
             <br>
-            <p>Nas matas verdes de um passado eterno, <br>
+            <p style="font-size: .9em;">Nas matas verdes de um passado eterno, <br>
                 Reside o canto do povo a lutar. <br>
                 Indígena forte, em seu peito terno, <br>
                 Carrega a história de um viver sem par. <br>
@@ -108,7 +116,7 @@
                 <article class="poe" id="poe3"><h1 style="font-size: 5vh; color: #935409; font-family: Garamond;">Terra indígena</h1>
                     <legend style="color: #935409; font-family: Garamond;">por Raylander Kellyson Silva</legend>
                     <br>
-                    <p>De tempos em tempos,<br>
+                    <p style="font-size: .9em;">De tempos em tempos,<br>
                         Salvador nosso temos <br>
                         Verdadeiros donos dessa terra,<br>
                         Que invadida por eles foi.<br>
@@ -131,6 +139,10 @@
     <script>
         let ImgSec = document.querySelector('#Imagem1')
         let ImgSec1 = document.querySelector('#Imagem2')
+        let ImgSec2 = document.querySelector('#Imagem3')
+        let ImgSec3 = document.querySelector('#Imagem4')
+        let ImgSec4 = document.querySelector('#Imagem5')
+        let ImgSec5 = document.querySelector('#Imagem6')
 
         let Poe = document.getElementById('poe')
         let Poe1 = document.getElementById('poe1')
@@ -141,9 +153,17 @@
             if (Poe.display == 'none') {
                 ImgSec.style.display = "block";
                 ImgSec1.style.display = "block";
+                ImgSec2.style.display = "block";
+                ImgSec3.style.display = "block";
+                ImgSec4.style.display = "block";
+                ImgSec5.style.display = "block";
             } else {
                 ImgSec.style.display = "block";
                 ImgSec1.style.display = "block";
+                ImgSec2.style.display = "block";
+                ImgSec3.style.display = "block";
+                ImgSec4.style.display = "block";
+                ImgSec5.style.display = "block";
                 Poe.style.display = 'none'
                 Poe1.style.display = 'none'
                 Poe2.style.display = 'none'
@@ -164,6 +184,10 @@
                 Poe3.style.display = 'block'
                 ImgSec.style.display = "none";
                 ImgSec1.style.display = "none";
+                ImgSec2.style.display = "none";
+                ImgSec3.style.display = "none";
+                ImgSec4.style.display = "none";
+                ImgSec5.style.display = "none";
             }
         }
     </script>

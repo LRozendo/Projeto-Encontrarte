@@ -62,6 +62,8 @@ nav a:hover, nav a:active {
     background-color: var(--GradientColorNormal);
 
     padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
     border-radius: 5px;
 
     transition: 0.2s;
@@ -126,8 +128,8 @@ article > p {
 
     line-height: 1.3em;
 
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 3px;
+    padding-right: 3px;
 
     color: #894c29;
 
@@ -171,14 +173,6 @@ article > p {
     text-indent: 0px;
 }
 
-
-#Imagem1 {
-    background-image: url(../images/Sla.jfif);
-}
-
-#Imagem2 {
-    background-image: url(../images/Sla2.jfif);
-}
 
 main section {
 
