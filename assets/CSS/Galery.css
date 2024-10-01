@@ -35,7 +35,7 @@ body {
 
 nav {
     width: 100vw;
-    color: var(--ColorBold);
+    color: #fea16c;
     background-color: transparent;
 
     text-align: center;
@@ -54,7 +54,6 @@ nav {
 nav a {
     font-weight: normal;
     color: var(--ColorBasicContrast);
-    text-decoration: underline;
 
     transition: 0.2s;
 }
@@ -147,7 +146,7 @@ article > p {
 }
 
 .poe {
-    height: 0vh;
+    height: 0;
     opacity: 0;
     margin-bottom: 0;
     overflow: hidden;
@@ -187,7 +186,7 @@ article > p {
 
 main section {
 
-    height: 0vh;
+    height: 0;
     width: 90%;
 
     margin: auto;
@@ -195,7 +194,7 @@ main section {
     
     background-image: linear-gradient(to bottom, var(--GradientColorLighter), var(--GradientColorNormal), var(--GradientColorBold));
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-attachment: fixed;
     background-repeat: no-repeat;
 
@@ -210,6 +209,92 @@ main section {
 main section.show {
     height: 300px; /* Altura total quando visível */
     opacity: 1;
-    margin-bottom: 10px; /* Adiciona o espaçamento quando visível */
+    margin-bottom: 150px; /* Adiciona o espaçamento quando visível */
     transition: height .8s ease, opacity 0.8s ease;
+}
+
+#Imagem1 {
+    background-image: url(../images/PI_Floresta.png);
+}
+
+#Imagem1::after {
+    content: " HARMONIA E BELEZA ENTRE OS INDÍGENAS E A NATUREZA: retrata a harmonia entre indígenas e a natureza, destacando a convivência pacífica e sustentável. Com cores suaves e um cenário natural, a obra simboliza a conexão espiritual dos povos originários com o meio ambiente, valorizando o respeito e equilíbrio com a terra. CARLOS EMANUEL";
+    font-size: 0.8em;
+    text-align: justify;
+    display: block;
+    color: gray;
+    font-style: italic;
+    margin-top: 300px;
+}
+
+#Imagem2 {
+    background-image: url(../images/PI_Árvore.png);
+}
+
+#Imagem2::after {
+    content: " RAÍZES DE POVOS INDÍGENAS: A obra representa a profunda conexão da cultura indígena com a natureza e o cosmos. A árvore simboliza a sabedoria ancestral, ramificada entre a terra e o céu. As estrelas e cores vibrantes destacam o misticismo e a espiritualidade indígena, enquanto o barco e a água indicam uma jornada espiritual através das tradições. CARLOS EMANUEL";
+    font-size: 0.8em;
+    text-align: justify;
+    display: block;
+    color: gray;
+    font-style: italic;
+    margin-top: 300px;
+}
+
+#Imagem3 {
+    background-image: url(../images/PunhoFoda.jpeg);
+}
+
+#Imagem3::after {
+    content: "A RESISTÊNCIA: A luta dos povos indígenas pela preservação da natureza, contrastando a devastação ambiental com a harmonia ecológica. O punho erguido representa resistência, e os padrões indígenas no braço reforçam a importância da conexão entre esses povos e a proteção do meio ambiente. CARLOS EMANUEL";
+    text-align: justify;
+    font-size: 0.8em;
+    display: block;
+    color: gray;
+    font-style: italic;
+    margin-top: 300px;
+}
+
+
+
+#Imagem4 {
+    background-image: url(../images/PI_Coca.png);
+}
+
+#Imagem4::after {
+    content: "PEQUENO ÍNDIO: Um jovem indígena em um contexto moderno, usando camiseta e bebendo de uma garrafa, desafiando estereótipos tradicionais. Destacando a coexistência entre a herança indígena e o mundo contemporâneo, mostrando que a identidade indígena é dinâmica, integrada à modernidade, mas ainda conectada às suas raízes. GIVALDO CARNEIRO";
+    text-align: justify;
+    font-size: 0.8em;
+    display: block;
+    color: gray;
+    font-style: italic;
+    margin-top: 300px;
+}
+
+#Imagem5 {
+    background-image: url(../images/OlhandoPCima.jpeg);
+}
+
+#Imagem5::after {
+    content: "HERÓI DA ALDEIA: O impacto do desmatamento e da poluição nas aldeias indígenas, mostrando uma transição entre o lado degradado à esquerda e o lado preservado à direita. O indígena central, com símbolos tradicionais, representa a defesa da natureza, destacando seu papel crucial na proteção do meio ambiente e de sua cultura. GIVALDO CARNEIRO";
+    text-align: justify;
+    font-size: 0.8em;
+    display: block;
+    color: gray;
+    font-style: italic;
+    margin-top: 300px;
+}
+
+#Imagem6 {
+    background-image: url(../images/CoisaLinda.jpeg);
+}
+
+#Imagem6::after {
+    content: "JOVEM MOÇA: A transição de uma jovem indígena da adolescência para a vida adulta, representada por grafismos que simbolizam sua nova fase como solteira. Elementos naturais, como flores e animais, reforçam sua conexão com a natureza e a cultura. A expressão serena da jovem reflete aceitação, enquanto símbolos como o jaguar e os peixes destacam força e novas possibilidades nessa etapa da vida. GIVALDO CARNEIRO";
+    text-align: justify;
+    font-size: 0.8em;
+    display: block;
+    color: gray;
+    font-style: italic;
+    margin-top: 300px;
 }
